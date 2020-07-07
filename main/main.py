@@ -5,8 +5,12 @@ import math
 import os
 import io
 import pyqrcode
+
+#loading the images
 image=Image.open('path to the file')
+#converting the images into a numpy array 
 Matrix=np.asarray(image)
+#saving the shape of the array thats the key
 shape=Matrix.shape
 data_size=313
 #flattening the array to about 1d
