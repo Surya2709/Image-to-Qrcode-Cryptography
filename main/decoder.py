@@ -16,7 +16,7 @@ class decoder:
             file=None
         #reforming the array back to the original shape
         extracted_array=np.asarray(one_d_array).reshape(self.shapekey)
-        #convert back array to image
+        #convert back array to image and showing the image
         extracted_image=Image.fromarray(extracted_array)
         extracted_image.show()
         extracted_image.save()
